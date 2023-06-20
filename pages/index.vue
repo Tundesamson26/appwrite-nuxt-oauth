@@ -1,6 +1,6 @@
 <template>
-  <div class="u-text-center">
-    <h2 class="u-text-center u-font-size-32 u-margin-32">Login with Amazon</h2>
+  <h2 class="u-text-center u-font-size-32 u-margin-32">Login with Amazon</h2>
+  <div class="card u-text-center u-max-width-400" style="margin: auto">
     <div class="u-text-center">
       <p>Click on this button to login</p>
       <button
@@ -13,9 +13,9 @@
   </div>
 </template>
 <script setup>
-import "@appwrite.io/pink"; // optionally, add icons
-import "@appwrite.io/pink-icons";
 import { Client, Account } from "appwrite";
+import "@appwrite.io/pink";
+import "@appwrite.io/pink-icons";
 
 const client = new Client();
 const account = new Account(client);
