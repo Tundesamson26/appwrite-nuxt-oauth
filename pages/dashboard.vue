@@ -26,7 +26,7 @@
   </section>
 </template>
 <style>
-    
+    .container{}
 </style>
 <script setup>
 import { ref, onMounted } from "vue";
