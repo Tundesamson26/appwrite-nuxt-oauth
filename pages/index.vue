@@ -24,9 +24,9 @@ client
   .setEndpoint("https://cloud.appwrite.io/v1")
   .setProject("648b874f54b5092cdf00");
 
-const loginWithAmazon = () => {
+const loginWithAmazon = async() => {
   try {
-    account.createOAuth2Session("amazon", "http://localhost:3000/dashboard");
+    await account.createOAuth2Session("amazon", "http://localhost:3000/dashboard");
   } catch (e) {
     alert("user does not exist");
     console.log(e);
