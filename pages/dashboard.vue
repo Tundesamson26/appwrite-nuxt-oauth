@@ -32,7 +32,7 @@
 import { ref, onMounted } from "vue";
 import { useRouter } from 'vue-router';
 import { Client, Account } from "appwrite";
-import "@appwrite.io/pink"; // optionally, add icons
+import "@appwrite.io/pink";
 import "@appwrite.io/pink-icons";
 
 const client = new Client();
