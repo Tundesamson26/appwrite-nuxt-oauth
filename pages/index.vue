@@ -26,7 +26,7 @@ client
 
 const loginWithAmazon = async() => {
   try {
-    await account.createOAuth2Session("amazon", "http://localhost:3000/dashboard");
+    account.createOAuth2Session("amazon", "http://localhost:3000/dashboard");
   } catch (e) {
     alert("user does not exist");
     console.log(e);
